@@ -1,0 +1,122 @@
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    padding: 4rem 8rem 1rem 8rem;
+    background-color: hsl(233, 12%, 13%);
+    color: white;
+    gap: 2rem;
+}
+
+.logo-and-social{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row: 1 / span 2; 
+}
+
+.social{
+    display: flex;
+    align-self: flex-end;
+    gap: 12px;
+}
+
+.quick-links{
+    display: grid;
+    grid-template-rows: repeat(4, auto); /* 4 satır = alt alta 4 eleman */
+    grid-auto-flow: column;
+    color:hsl(240, 5%, 75%);
+    gap: 10px;
+    margin: 5px 0;
+    grid-row: 1 / span 2; 
+}
+
+.subscribe-button{
+    box-shadow: none;
+    padding: 10px 20px;
+}
+.subscribe>div{
+    width: 100%;
+    gap: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.subscribe>div:nth-last-child(1){
+    display: flex;
+    justify-self: flex-end;
+    align-content: center;
+}
+.copyright{
+    text-align: center;
+}
+.contrast-logo{
+    filter:hue-rotate(-0.6turn) brightness(13)
+}
+.mark{
+    grid-column: 1 / span 3;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-device-width:1200px) {
+    footer{
+        padding: 4rem 2rem 1rem 2rem;
+    }
+}
+@media screen and (max-device-width:600px) {
+    footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "subscribe"
+        "links"
+        "logo"
+        "copyright"
+        "mark";
+    }
+    .logo-and-social { 
+        grid-area: logo; 
+    }
+    .quick-links { 
+        grid-area: links; 
+        font-size: 12px;
+    }
+    .quick-links { 
+        font-size: 14px;
+        padding: 2em;
+    }
+    .quick-links>a{
+        padding: 1em 4em;
+    }
+    .subscribe { 
+        grid-area: subscribe; 
+        width: 90%;
+        margin-left: 1em;
+    }
+    .copyright{
+        grid-area: copyright;
+    }
+    .mark { 
+        grid-area: mark; 
+    }
+    .logo-and-social{
+        grid-template-areas: "social" "logo";
+        gap: 4em;
+    }
+    .logo-and-social>div{
+        display: flex;
+        justify-items: center;
+    }
+    .contrast-logo{
+        grid-area: logo;
+        width: 50%;
+        margin: auto;
+    }
+    .social{
+        grid-area: social;
+        width: 100%;
+        align-self: auto;
+        justify-content: center;
+        gap:5em;
+    }
+}

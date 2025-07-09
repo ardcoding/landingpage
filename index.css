@@ -1,0 +1,116 @@
+body{
+    margin:auto;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color:hsl(231,39%,24%);
+    overflow-x: hidden;
+    position: relative;
+    background-image: url("images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: top -10em right -10em;
+    position: relative;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+h3{
+    font-weight: 700;
+}
+p{
+    color:hsl(240, 3%, 60%);
+}
+button{
+    background-color:  hsl(12, 88%, 59%);
+    padding: 0.75rem 2rem;
+    border-radius: 2em;
+    border: none;
+    box-shadow: 0 5px 10px 0 hsl(12, 88%, 59%);
+    color: aliceblue;
+    font-weight: 700;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsla(12, 94%, 64%, 0.867);
+}
+input{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+input::placeholder{
+    color: rgba(102, 101, 101, 0.689);
+}
+section{
+    margin-top: 8rem;
+}
+.navbar{
+    display: grid;
+}
+.responsive-navbar{
+    display: none;
+}
+@media screen and (max-device-width: 1200px) {
+    p{
+        font-weight: 400;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 26px;
+    }
+    span{
+        font-size: 26px;
+    }
+    button{
+        font-size: 16px;
+        padding: 1em 2.5em;
+    }
+}
+@media screen and (max-device-width:600px) {
+    p{
+        font-weight: 400;
+        font-size: 8px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 28px;
+    }
+    span{
+        font-size: 20px;
+    }
+    button{
+        font-size: 16px;
+        padding: 1em 2.5em;
+    }
+    section{
+        margin-top: 6em;
+    }
+    input{
+        width: 100%;
+        height: 5vw;
+        border-radius: 20px;
+        border: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .responsive-navbar{
+        display: block;
+    }
+}

@@ -1,0 +1,31 @@
+.testimonials{
+    display: grid;
+}
+.testimonials>div{
+    padding: 0px 2em;
+    text-align: center;
+}
+.comment{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 2em;
+}
+.comment-item{
+    text-align: center;
+    padding: 2em;
+}
+.comment-item>img{
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-device-width: 1200px) {
+    
+}
+@media screen and (max-device-width: 600px) {
+    .comment{
+            grid-template-columns: 1fr;
+            margin-top: 5em;
+    }
+}

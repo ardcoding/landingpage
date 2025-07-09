@@ -1,0 +1,63 @@
+nav{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 4rem 8rem 3rem;
+}
+nav > div{
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+}
+nav>div>img{
+    align-self: center;
+}
+nav>div:nth-of-type(3){
+    justify-content: flex-end;
+}
+.menu-modal>a{
+    align-self: center;
+}
+.menu-modal>a:hover{
+    cursor: pointer;
+    color:gray;
+}
+.close-button{
+    display: none;
+    cursor: pointer;
+}
+.hamburger-button{
+    display: block;
+    cursor: pointer;
+}
+.menu-modal{
+    display: none;
+    position: absolute;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,auto);
+    text-align: center;
+    gap: 2em;
+    padding: 3em 0;
+    top: 0rem;
+    left: 2rem;
+    right: 2rem;
+    background-color: white;
+    z-index: 2;
+    opacity: 1;
+}
+.menu{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 7rem;
+    left: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.047), rgb(0, 0, 0));
+    opacity: 1;
+    z-index: 1;
+}
+@media screen and (max-width:1200px) {
+    nav{
+        padding: 4rem 2rem 3rem;
+    }
+}

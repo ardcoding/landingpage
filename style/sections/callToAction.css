@@ -1,0 +1,35 @@
+.callToAction{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color:  hsl(12, 88%, 59%);
+    background-image: url("/images/bg-simplify-section-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.callToAction>div{
+    display: grid;
+    color: aliceblue;
+    justify-content: flex-end;
+    justify-items: center;
+    align-content: center;
+    padding: 2rem 8rem;
+}
+.contrastbutton{
+    background-color: aliceblue;
+    color:  hsl(12, 88%, 59%);
+    box-shadow: none;
+    justify-self: flex-end;
+}
+.contrastbutton:hover{
+    cursor: pointer;
+     background-color: rgba(240, 248, 255, 0.981);
+    filter: brightness(1.5) opacity(90%);   
+}
+@media screen and (max-device-width:1200px) {
+    .callToAction>div{
+        padding:1rem 4rem;
+    }
+    .callToActionHeader{
+        width: 100%;
+    }
+}
