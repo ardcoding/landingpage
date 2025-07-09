@@ -37,9 +37,9 @@ This project is a promotional landing page example.
 ## 📷 **Screenshots**
 
 ![Overview](./design/desktop-preview.jpg)  
-![Desktop Design](./design/desktop-design.png)  
-![Mobile Design](./design/mobile-design.png)  
-![Active States](./design/active-states.png)  
+![Desktop Design](./design/desktop-design.jpg)  
+![Mobile Design](./design/mobile-design.jpg)  
+![Active States](./design/active-states.jpg)  
 ![Mobile Navigation](./design/mobile-navigation.jpg)
 
 ---
